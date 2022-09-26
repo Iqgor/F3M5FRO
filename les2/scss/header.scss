@@ -1,0 +1,36 @@
+@use 'colors';
+@use 'font';
+
+.header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.header__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.header__div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient( rgb(151, 210, 236, 0.25),80%,rgb(254, 245, 172, 0.25));
+
+}
+
+.header__h1{
+    
+}

@@ -1,0 +1,19 @@
+@use "colors";
+@use "font";
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 2rem;
+  font-family: font.$handwriting;
+  background: colors.$blue;
+}

@@ -1,0 +1,277 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'lato',sans-serif;
+    background: #25316D;
+}
+
+.nav{
+    width: 100%;
+    min-height: 6rem;
+    background: #5f6f94ad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    font-size: 130%;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+    transition: 0.3s;
+}
+.nav:hover{
+    background: #5f6f94;
+}
+
+.nav  i{
+    font-size: 250%;
+    border: 0.5rem solid #97D2EC;
+    border-radius: 50%;
+    padding: 1rem;
+    
+}
+
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.cta{
+    width: 12rem;
+    padding: 1.6rem;
+    font-size: 75%;
+    background: #FEF5AC;
+    border: none;
+    color: #5F6F94;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover{
+    cursor: pointer;
+    background:hsl(53, 98%, 59%) ;
+    transition: 0.2s;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+
+
+.banner > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    
+}
+
+
+
+.banner > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient( rgb(151, 210, 236, 0.25),80%,rgb(254, 245, 172, 0.25));
+}
+
+.heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 500%;
+}
+
+.heading2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 280%; 
+}
+
+.logo{
+    font-size: 300%;
+    border: 0.5rem solid #97D2EC;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.over{
+    width: 100%;
+    padding: 4rem;
+
+    
+}
+
+.sectionHeaders{
+    width: 100%;
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #eee;
+    font-size: 350%;
+}
+
+.over > div{
+    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.over > div p {
+    width: 55ch;
+    color: #eee;
+    padding-bottom: 2rem;
+}
+
+.over > div img{
+   width: 35%;
+   height: 100%;
+   object-fit: cover; 
+   border-radius: 0.25rem;
+   
+}
+
+hr{
+    border: 0.15rem solid #97D2EC;
+    margin: 2rem;
+    border-radius:0.5rem ;
+}
+
+.kenmerken{
+    padding: 4rem;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.kenmerk > h2{
+    height: 20%;
+}
+
+.kenmerkenLijst{
+    
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   height: 80%;
+   
+}
+
+.kenmerk{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    list-style: none;
+    color: #eee;
+    flex-shrink: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    align-items:center ;
+}
+
+.kenmerkIcon{
+    font-size: 200%;
+    border: 0.2rem solid #97D2EC;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kenmerk p{
+    width: 40ch;
+    text-align: center;
+}
+
+.gallerij{
+    height: 80vh;
+    
+}
+.gallerij > h2{
+    padding: 4rem;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.foto{
+    width: 25%;
+    height: 40rem;
+    position: relative;
+}
+
+.foto > section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgb(151, 210, 236, 0.5),80%,rgb(254, 245, 172, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto:hover > section{
+    transform: scale(1);
+    
+}
+
+.foto:hover .cta{
+    opacity: 1;
+    
+}
+
+.foto .cta{
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+    
+}
+
+.foto > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+

@@ -1,0 +1,58 @@
+@use 'colors';
+
+.nav{
+    width: 100%;
+    min-height: 6rem;
+    background: colors.$blue__nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: colors.$fontcolor;
+    font-size: 130%;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.nav__logo{
+    font-size: 250%;
+    border: colors.$bordercolor;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.nav:hover{
+    background: #5f6f94;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+
+
+.nav__link{
+    color: colors.$fontcolor;
+    text-decoration: none;
+}
+
+.nav__button{
+    width: 12rem;
+    padding: 1.6rem;
+    font-size: 75%;
+    background: colors.$fontcolor;
+    border: none;
+    color: #5F6F94;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.nav__button:hover{
+    cursor: pointer;
+    background:darken(colors.$yellow, 10%) ;
+    transition: 0.2s;
+}

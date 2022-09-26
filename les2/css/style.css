@@ -1,0 +1,102 @@
+.nav {
+  width: 100%;
+  min-height: 6rem;
+  background: rgba(95, 111, 148, 0.6784313725);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  font-size: 130%;
+  padding: 2rem;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.nav__logo {
+  font-size: 250%;
+  border: 0.5rem solid #97D2EC;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav:hover {
+  background: #5f6f94;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.nav__link {
+  color: #eee;
+  text-decoration: none;
+}
+
+.nav__button {
+  width: 12rem;
+  padding: 1.6rem;
+  font-size: 75%;
+  background: #eee;
+  border: none;
+  color: #5F6F94;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.nav__button:hover {
+  cursor: pointer;
+  background: #fdef7a;
+  transition: 0.2s;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "lato", sans-serif;
+  background: #25316D;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.header__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.header__div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgba(151, 210, 236, 0.25), 80%, rgba(254, 245, 172, 0.25));
+}
+
+/*# sourceMappingURL=style.css.map */

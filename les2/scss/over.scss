@@ -1,0 +1,52 @@
+@use 'colors';
+@use 'font';
+@use 'components';
+
+
+.over {
+    @extend %sections;
+}
+
+.over__header {
+    @extend %h2HandwritingArticles;
+    
+    
+}
+
+.over__articles {
+    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.over__p {
+    width: 55ch;
+    color: colors.$fontcolor;
+    padding-bottom: 2rem;
+}
+
+.over__figure{
+    width: 35%;
+    position: relative;
+    border-radius: 0.25rem;
+}
+
+.over__figure::after{
+    content: "" ;
+    background: colors.$linear-gradient-default;
+    width: 100%;
+    height: 99%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.25rem;
+    
+}
+
+.over__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}

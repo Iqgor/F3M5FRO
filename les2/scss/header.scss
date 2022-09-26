@@ -1,5 +1,6 @@
 @use 'colors';
 @use 'font';
+@use 'components';
 
 .header{
     height: 100vh;
@@ -27,10 +28,27 @@
     gap: 3rem;
     align-items: center;
     color: rgb(255, 255, 255);
-    background: linear-gradient( rgb(151, 210, 236, 0.25),80%,rgb(254, 245, 172, 0.25));
+    background: colors.$linear-gradient-default;
 
+}
+
+.header__logo{
+    font-size: 300%;
+    border: colors.$bordercolor;
+    border-radius: 50%;
+    padding: 1rem;
 }
 
 .header__h1{
-    
+    font-family: font.$handwriting;
+    font-size: 500%;
 }
+
+.header__h2{
+    @extend %h2HandwritingHeader;
+}
+
+.header__button{
+    @extend %cta;
+}
+

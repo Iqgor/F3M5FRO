@@ -1,0 +1,65 @@
+@use 'colors';
+@use 'font';
+@use 'components';
+
+
+.gallerij{
+    min-height: 80vh;
+}
+
+.gallerij__header{
+    @extend %h2HandwritingArticles;
+    padding: 4rem;
+}
+
+.gallerij__fotos{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.gallerij__foto{
+    width: 25%;
+    height: 40rem;
+    position: relative;
+}
+
+.gallerij__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallerij__gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgb(151, 210, 236, 0.5),80%,rgb(254, 245, 172, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallerij__button{
+    @extend %cta;
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+    
+}
+
+.gallerij__foto:hover > .gallerij__gradient {
+    transform: scale(1);
+}
+
+.gallerij__foto:hover .gallerij__button{
+    opacity: 1;
+}
+

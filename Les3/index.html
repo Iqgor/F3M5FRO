@@ -14,14 +14,14 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header class="header">
-        <figure class="header__logo">
+<body id="js--body">
+    <header id="js--header" class="header">
+        <figure id="js--logo" class="header__logo">
             <i class="fa-solid fa-pen-fancy"></i>
         </figure>
         <div class="header__rightWrapper">
             <label for="switch">
-                <input class="header__toggle" type="checkbox" name="" id="switch">
+                <input class="header__toggle" checked="false" type="checkbox" name="" id="js--toggle" >
             </label>
         <figure class="header__avatar">
             <img src="img/pexels-tima-miroshnichenko-6508537.jpg" alt="A man in a farm" class="header__img">
@@ -29,13 +29,13 @@
         </div>
         
     </header>
-    <article class="showcase">
+    <article id="js--showcase" class="showcase">
         <input id="js--input"  class="showcase__input" type="text">
         <section class="showcase__section">
             <h3 class="showcase__font">Satisfy</h3>
             <div class="showcase__underWrapper">
                 <h2 id="satisfy" class="showcase__output showcase__output--cursive">Placeholder Output</h2>
-                <button class="heart">
+                <button class="showcase__heart">
                     <i class="fa-regular fa-heart heart__logo"></i>
                 </button>
             </div>
@@ -44,7 +44,7 @@
             <h3 class="showcase__font">Inter Tight</h3>
             <div class="showcase__underWrapper">
                 <h2 id="inter" class="showcase__output showcase__output--Sans-sarif">Placeholder Output</h2>
-                <button class="heart">
+                <button class="showcase__heart">
                     <i class="fa-regular fa-heart heart__logo"></i>
                 </button>
                 
@@ -54,7 +54,7 @@
             <h3 class="showcase__font">IBM Plex Mono</h3>
             <div class="showcase__underWrapper">
                 <h2 id="mono" class="showcase__output showcase__output--mono">Placeholder Output</h2>
-                <button class="heart">
+                <button class="showcase__heart">
                     <i class="fa-regular fa-heart heart__logo"></i>
                 </button>
             </div>

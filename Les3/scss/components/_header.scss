@@ -1,0 +1,59 @@
+@use '../abstract/mixins';
+@use'../abstract/colors';
+@use "../abstract/animations";
+
+.header {
+    background: colors.$background;
+    width: 80vw;
+    max-width: 150rem;
+    height: 15rem;
+    @include mixins.flexCenter;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @include animations.popup;
+
+    &__logo {
+        font-size: 200%;
+        border: 0.2rem dashed transparent;
+        padding: 2rem;
+        border-radius: 50%;
+        @include mixins.flexCenter;
+        background: #ADDDD0;
+        color: colors.$background;
+        transition: 0.4s all;
+
+        &:hover {
+            border: 0.2rem dashed #ADDDD0;
+            color: #ADDDD0;
+            background: transparent;
+            @include mixins.rotate(0.8s);
+        }
+    }
+
+    &__rightWrapper {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__avatar {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+
+        &:hover {
+            @include mixins.rotate(1s)
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+
+}

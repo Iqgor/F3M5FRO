@@ -1,0 +1,31 @@
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin rotate($duration){
+    transform: rotate(360deg);
+    transition: $duration all;
+    transition-timing-function: linear;
+}
+
+@mixin fontCursive{
+    font-weight:400 ;
+    font-family: 'Satisfy', cursive; ;
+}    
+
+@mixin fontSans-serif{
+    font-weight: 400;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+@mixin fontMono{
+    font-weight: 400;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+
+
+

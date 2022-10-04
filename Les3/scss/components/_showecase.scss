@@ -1,0 +1,90 @@
+@use "../abstract/mixins";
+@use "../abstract/colors";
+@use "../abstract/animations";
+
+.showcase {
+    width: 80vw;
+    max-width: 150rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-top: 4rem;
+    gap: 6rem;
+    background: colors.$background;
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @include animations.popup;
+
+    &__input {
+        font-size: 100%;
+        padding: 0rem 0rem 1rem 0.25rem;
+        width: 50%;
+        border: none;
+        background: none;
+        border-bottom: 0.2rem solid #ADDDD0;
+        transition: 0.2s all;
+        font-family: 'Lato', sans-serif;
+
+        &:focus {
+            outline: none;
+            border-bottom: 0.4rem solid #ADDDD0
+        }
+
+
+    }
+
+    &__section {
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    &__font {
+        font-size: 150%;
+        font-weight: 400;
+    }
+
+    &__underWrapper {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+    }
+
+    &__output {
+        font-size: 250%;
+
+        &--cursive {
+            @include mixins.fontCursive;
+        }
+
+        &--Sans-sarif {
+            @include mixins.fontSans-serif;
+        }
+
+        &--mono {
+            @include mixins.fontMono;
+        }
+
+    }
+
+    .heart {
+        background: none;
+        border: none;
+        font-size: 150%;
+        color: #ADDDD0;
+        cursor: pointer;
+
+        
+
+    }
+
+
+
+
+
+
+}

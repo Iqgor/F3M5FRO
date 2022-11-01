@@ -41,6 +41,13 @@ toggle.onclick = function(){
         input.style.color = "#eee"
         body.style.background = "#86a79e"
     }
-    
+    else {
+        header.style.background = "#eee"
+        showcase.style.background = "#eee"
+        showcase.style.color = "black"
+        logo.style.background = "#ADDDD0"
+        input.style.color = "black"
+        body.style.background = "linear-gradient(to bottom right, #ADDDD0, 60%, #65bfa7)"
+    }
 }
 

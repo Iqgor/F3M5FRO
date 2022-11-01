@@ -1,0 +1,16 @@
+@use "variables";
+body{
+    background: variables.$background;
+    font-size: 1.6rem;
+    font-family: map-get(variables.$fontVars, "font");
+    color: map-get(variables.$fontVars, "color");
+    max-height: 100vh;
+    padding: 4rem;
+    display: flex;
+   
+}
+.main{
+    display: flex;
+    gap: 4rem;
+    
+}

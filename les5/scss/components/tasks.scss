@@ -96,6 +96,18 @@
         }
     }
 
+    &__initials{
+        width: 5rem;
+        height: 5rem;
+        background: rgba(204, 255, 0, 0.804);
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%  ;
+    }
+
     &__h3{
         font-size: 110%;
         padding-top: 2rem;
@@ -105,5 +117,10 @@
         background: none;
         font-weight: 700;
     }
+}
+
+.wrapper{
+    display: flex;
+    justify-content: flex-end;
 }
 

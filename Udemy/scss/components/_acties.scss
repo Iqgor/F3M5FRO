@@ -1,0 +1,78 @@
+@use '../abstract/variables';   
+
+.acties{
+    
+    width: 88%;
+
+    margin-top: 4rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    &__h2{
+        font-family: variables.$handwriting;
+        font-size: 3.5rem;
+    }
+    &__ondertitel{
+        max-width: 75rem;
+        font-size: 90%;
+        
+    }
+
+    &__buttons{
+        width: 40rem;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        &--button{
+            border: none;
+            background: none;
+            font-size: 90%;
+            color: rgba(0, 0, 0, 0.695);
+            font-weight: bold;
+            transition: 0.2s;
+            &:hover{
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__panel{
+        border: 0.1rem solid rgba(0, 0, 0, 0.315);
+        padding: 2rem;
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &--img{
+            
+            width: 20rem;
+            height: 30rem;
+            object-fit: cover;
+            border-radius: 0.25rem;
+        }
+
+        &--button{
+            width: max-content;
+            border: 0.1rem solid black;
+            padding: 1.2rem 1rem;
+            font-weight: bold;
+            transition: 0.4s;
+            background: white;
+            &:hover{
+                background: #eee;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:25rem) {
+    .acties__buttons{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}

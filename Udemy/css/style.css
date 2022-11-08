@@ -1,0 +1,574 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 7rem;
+  padding: 0 2.4rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header__hamburger {
+  height: 5rem;
+  width: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+  flex-direction: column;
+}
+.header__hamburger--line {
+  width: 4rem;
+  height: 0.6rem;
+  background: black;
+  border-radius: 5rem;
+}
+.header__linkLogo {
+  width: 20rem;
+  height: 100%;
+}
+.header__linkLogo--logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.header__button {
+  background: none;
+  border: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 70%;
+}
+.header__button--blank {
+  transition: 0.4s;
+}
+.header__button--blank:hover {
+  color: #5624d0;
+  cursor: pointer;
+}
+.header__button--block {
+  border: 0.1rem solid black;
+  padding: 1.2rem 1rem;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.header__button--block:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.header__button--blockdark {
+  background: rgba(0, 0, 0, 0.904);
+  padding: 1.3rem 1.1rem;
+  font-weight: bold;
+  color: white;
+  transition: 0.4s;
+}
+.header__button--blockdark:hover {
+  background: black;
+  cursor: pointer;
+}
+.header__icons {
+  transition: 0.25s;
+}
+.header__icons--ophalf {
+  opacity: 0.5;
+}
+.header__icons:hover {
+  color: #5624d0;
+}
+.header__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  cursor: pointer;
+  border-radius: 25rem;
+  border: 0.1rem solid black;
+  background: rgb(247, 247, 247);
+  padding: 1.2rem 1rem;
+}
+.header__search {
+  border: none;
+  width: 100%;
+  background: none;
+}
+.header__search:focus {
+  outline: none;
+}
+.header__link {
+  font-style: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 50rem) {
+  .header {
+    justify-content: space-between;
+  }
+  .header__hamburger {
+    display: flex;
+  }
+  .header__linkLogo {
+    width: 9rem;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__label {
+    width: 0;
+    border: none;
+    background: none;
+  }
+  .header__icons--ophalf {
+    opacity: 1;
+  }
+  .header__search {
+    display: none;
+  }
+  .fa-cart-shopping {
+    display: none;
+  }
+}
+.bigfigure {
+  width: 88%;
+  height: 45rem;
+  position: relative;
+}
+.bigfigure__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.125rem;
+}
+.bigfigure__div {
+  position: absolute;
+  width: 44rem;
+  min-height: 18rem;
+  background: white;
+  top: 20%;
+  left: 8%;
+  border-radius: 0.125rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bigfigure__div--h2 {
+  font-family: "Bona Nova", serif;
+  font-size: 180%;
+}
+.bigfigure__div--p {
+  font-size: 90%;
+}
+
+@media screen and (max-width: 43.75rem) {
+  .bigfigure {
+    width: 100%;
+  }
+  .bigfigure__div {
+    display: none;
+  }
+}
+.acties {
+  width: 88%;
+  margin-top: 4rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.acties__h2 {
+  font-family: "Bona Nova", serif;
+  font-size: 3.5rem;
+}
+.acties__ondertitel {
+  max-width: 75rem;
+  font-size: 90%;
+}
+.acties__buttons {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}
+.acties__buttons--button {
+  border: none;
+  background: none;
+  font-size: 90%;
+  color: rgba(0, 0, 0, 0.695);
+  font-weight: bold;
+  transition: 0.2s;
+}
+.acties__buttons--button:hover {
+  color: black;
+  cursor: pointer;
+}
+.acties__panel {
+  border: 0.1rem solid rgba(0, 0, 0, 0.315);
+  padding: 2rem;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.acties__panel--img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+.acties__panel--button {
+  width: max-content;
+  border: 0.1rem solid black;
+  padding: 1.2rem 1rem;
+  font-weight: bold;
+  transition: 0.4s;
+  background: white;
+}
+.acties__panel--button:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 25rem) {
+  .acties__buttons {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+.garantie {
+  height: 10rem;
+  width: 100%;
+  background: rgb(248, 248, 248);
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.garantie__vak {
+  width: 40rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.garantie__vak--icon {
+  height: 5rem;
+  width: 5rem;
+  background: rgb(192, 192, 192);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.garantie__vak--p {
+  font-size: 70%;
+  width: 80%;
+  font-weight: bold;
+}
+
+.garantie2 {
+  min-height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(248, 248, 248);
+  margin-top: 4rem;
+  padding: 2rem;
+  gap: 2rem;
+}
+.garantie2__h2 {
+  font-family: "Bona Nova", serif;
+}
+.garantie2__games {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.garantie2__games--img {
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 40.625rem) {
+  .garantie__vak--p {
+    display: none;
+  }
+}
+.aanbiedingen {
+  width: 88%;
+  min-height: 30rem;
+  margin-top: 2rem;
+}
+.aanbiedingen__list {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.aanbiedingen__aanbieding {
+  width: 20%;
+  height: 100%;
+}
+.aanbiedingen__aanbieding--img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0.25rem;
+}
+.aanbiedingen__aanbieding--h3 {
+  font-size: 90%;
+}
+.aanbiedingen__aanbieding--figcap {
+  font-size: 70%;
+  color: rgb(146, 145, 145);
+}
+.aanbiedingen__aanbieding--actie {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.aanbiedingen__aanbieding--prijs {
+  font-size: 90%;
+}
+.aanbiedingen__aanbieding--prijs1 {
+  font-size: 70%;
+  color: grey;
+}
+.aanbiedingen__aanbieding--button {
+  border: none;
+  background: gold;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.125rem;
+}
+.aanbiedingen__aanbieding--button:hover {
+  background: rgba(255, 217, 0, 0.774);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 35rem) {
+  .aanbiedingen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aanbiedingen__list {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .aanbiedingen__aanbieding {
+    width: 100%;
+  }
+}
+.uitgelicht {
+  height: 40rem;
+  width: 100%;
+  background: rgb(248, 248, 248);
+  margin-top: 10rem;
+}
+.uitgelicht__h2 {
+  font-size: 120%;
+}
+.uitgelicht__midden {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.uitgelicht__midden2 {
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+}
+.uitgelicht__categorieen {
+  width: 25%;
+  height: 20rem;
+  margin: 2rem;
+}
+.uitgelicht__categorieen--h3 {
+  font-size: 90%;
+}
+.uitgelicht__categorie {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.uitgelicht__categorie--onderwerp {
+  font-size: 80%;
+  color: #5624d0;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.uitgelicht__categorie--onderwerp:hover {
+  color: #441ca5;
+}
+.uitgelicht__button {
+  border: 0.1rem solid black;
+  background: none;
+  font-weight: bold;
+  width: 20rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.uitgelicht__button:hover {
+  background: #eee;
+}
+
+@media screen and (max-width: 43.75rem) {
+  .uitgelicht__midden {
+    margin: 0;
+    width: 100%;
+  }
+}
+.verkoop {
+  width: 100%;
+  height: 50rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.verkoop__img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+.verkoop__article {
+  width: 40rem;
+  height: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.verkoop__article--img {
+  height: 7.5rem;
+  width: 22.5rem;
+  object-fit: contain;
+}
+.verkoop__article--button {
+  background: rgba(0, 0, 0, 0.884);
+  border: none;
+  color: white;
+  padding: 2rem 1rem;
+  width: 70%;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 80%;
+}
+.verkoop__h3 {
+  font-size: 170%;
+  font-family: "Bona Nova", serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 43.75rem) {
+  .verkoop {
+    flex-direction: column;
+  }
+  .verkoop__img {
+    display: none;
+  }
+  .verkoop__article {
+    width: 100%;
+  }
+}
+.footer {
+  background: #1c1d1f;
+  width: 100%;
+  min-height: 30rem;
+  padding: 2.4rem 4.8rem;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__lists {
+  display: flex;
+  gap: 15rem;
+  font-size: 70%;
+}
+.footer__lists--items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__lists--link {
+  color: white;
+  text-decoration: none;
+}
+.footer__lists--link:hover {
+  text-decoration: underline;
+}
+.footer__button {
+  background: none;
+  border: 0.1rem solid white;
+  color: white;
+  width: 15rem;
+  height: 4rem;
+  padding: 0rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 80%;
+}
+.footer__button:hover {
+  background: rgba(238, 238, 238, 0.151);
+}
+
+@media screen and (max-width: 50rem) {
+  .footer__links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 43.75rem) {
+  .footer__lists {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

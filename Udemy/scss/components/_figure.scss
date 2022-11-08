@@ -1,0 +1,46 @@
+@use '../abstract/variables';
+
+.bigfigure{
+    width: 88%;
+    height: 45rem;
+
+    position: relative;
+    &__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.125rem;
+    }
+
+    &__div{
+        position:absolute;
+        width: 44rem;
+        min-height:18rem ;
+        background: white;
+        top: 20%;
+        left: 8%;
+        border-radius: 0.125rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &--h2{
+            font-family: variables.$handwriting;
+            font-size: 180%;
+        }
+
+        &--p{
+            font-size: 90%;
+        }
+    }
+}
+@media screen and (max-width:43.75rem) {
+    .bigfigure{
+        width: 100%;
+        
+        &__div{
+            display: none;
+        }
+    }
+}

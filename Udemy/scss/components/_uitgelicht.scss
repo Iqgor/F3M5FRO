@@ -1,0 +1,80 @@
+@use '../abstract/variables';
+
+
+.uitgelicht {
+    height: 40rem;
+    width: 100%;
+    background: rgb(248, 248, 248);
+    margin-top: 10rem;
+    
+    &__h2{
+        font-size: 120%;
+    }
+
+    &__midden {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__midden2 {
+        display: flex;
+        flex-direction: row;
+        height: 30rem;
+    }
+
+
+    &__categorieen {
+        width: 25%;
+        height:20rem;
+        margin: 2rem;
+        &--h3{
+            font-size: 90%;
+        }
+    }
+
+    &__categorie{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+        &--onderwerp{
+            font-size: 80%;
+            color:variables.$hovercolor;
+            text-decoration:underline;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                color: darken(variables.$hovercolor, 10%);
+            }
+        }
+    }
+
+    &__button{
+        border: 0.1rem solid black;
+        background: none;
+        font-weight: bold;
+        width:20rem; 
+        padding: 1rem 2rem;
+        cursor: pointer;
+
+        &:hover{
+            background: #eee;
+        }
+    }
+}
+
+@media screen and (max-width:43.75rem) {
+    .uitgelicht{
+        &__midden{
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

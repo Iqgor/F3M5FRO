@@ -1,0 +1,65 @@
+@use '../abstract/variables';
+
+.verkoop{
+    width: 100%;
+    height: 50rem;
+    margin-top:2rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    &__img{
+        width: 40rem;
+        height: 40rem;
+        object-fit: cover;
+    }
+
+    &__article{
+        width: 40rem;
+        height: 40rem;
+        
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--img{
+            height: 7.5rem;
+            width: 22.5rem;
+            object-fit: contain;
+        }
+
+        &--button{
+            background: rgba(0, 0, 0, 0.884);
+            border: none;
+            color: white;
+            padding: 2rem 1rem;
+            width: 70%;
+            margin-top: 2rem;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 80%;
+        }
+    }
+
+    &__h3{
+        font-size: 170%;
+        font-family: variables.$handwriting;
+        font-weight: 700;
+
+    }
+}
+
+@media screen and (max-width:43.75rem) {
+    .verkoop{
+        flex-direction: column;
+
+        &__img{
+            display: none;
+        }
+
+        &__article{
+            width: 100%;
+        }
+    }
+}

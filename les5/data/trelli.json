@@ -4,33 +4,40 @@
     "activity":[
         {
             "description" : "Nu moet echt alles af a shebiies",
-            "label": "Vandaag"
+            "label": "Vandaag",
+            "ini": "MJ"
             
         },
         {
             "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat deleniti accusantium maiores quod nisi,",
             "label": "Morgen",
-            "color": "morgen"
+            "color": "morgen",
+            "ini": "MJ"
+            
         },
         {
             "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat deleniti accusantium maiores quod nisi,",
             "label": "Ooit",
-            "color": "ooit"
+            "color": "ooit",
+            "ini": "IH"
         },
         {
             "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat deleniti accusantium maiores quod nisi,",
             "label": "Gedaan",
-            "color": "gedaan"
+            "color": "gedaan",
+            "ini": "JR"
         },
         {
             "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat deleniti accusantium maiores quod nisi,",
             "label": "Volgende Week",
-            "color": "volgendeweek"
+            "color": "volgendeweek",
+            "ini": "MJ"
         },
         {
             "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat deleniti accusantium maiores quod nisi,",
             "label": "Ooit",
-            "color": "ooit"
+            "color": "ooit",
+            "ini": "MJ"
         }
       
  

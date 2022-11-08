@@ -63,11 +63,19 @@ fetch("/data/trelli.json").then(
             
 
             let toBeAddedDes = document.createElement("p")
-
+            let toBeAddedSpan = document.createElement("span")
+            let toBeAddedInintials = document.createElement("figure")
+            
+            toBeAddedSpan.classList.add("wrapper")
+            
+            toBeAddedInintials.classList.add("tasks__initials")
+            toBeAddedInintials.innerText = data.activity[i].ini
             toBeAddedDes.innerText = data.activity[i].description
 
             toBeAddedLi.appendChild(toBeAddedLabel)
             toBeAddedLi.appendChild(toBeAddedDes)
+            toBeAddedLi.appendChild(toBeAddedSpan)
+            toBeAddedSpan.appendChild(toBeAddedInintials)
             /*Data toevegen aan de li's*/
         }
     }
